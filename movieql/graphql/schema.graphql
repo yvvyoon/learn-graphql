@@ -1,4 +1,10 @@
-type Query{
-    # 느낌표는 isRequired
-    name: String!
+type Marco {
+	name: String!
+	age: Int!
+	gender: String!
+}
+
+type Query {
+	# 느낌표는 isRequired
+	person: Marco!
 }
