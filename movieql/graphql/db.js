@@ -36,10 +36,13 @@ export const getById = (id) => {
 };
 
 export const deleteMovie = (id) => {
-	const cleanedMovies = movies.filter((movie) => movie.id !== id);
+    console.log(`id: ${id}`)
+    const cleanedMovies = movies.filter((movie) => movie.id !== id);
+    console.log(`cleanedMovies: ${cleanedMovies}`)
 
 	if (movies.length > cleanedMovies.length) {
-		movie = cleanedMovies;
+        movies = cleanedMovies;
+        console.log(`movies: ${movies}`)
 
 		return true;
 	} else {

@@ -13,4 +13,5 @@ type Query {
 # 데이터를 조작하고자 할 때 사용
 type Mutation {
 	addMovie(name: String!, score: Int!): Movie!
+	deleteMovie(id: Int!): Boolean!
 }
