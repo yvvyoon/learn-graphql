@@ -9,5 +9,5 @@ type Movie {
 
 type Query {
 	# 느낌표는 isRequired
-	movies: [Movie]!
+	movies(limit: Int, rating: Float): [Movie]!
 }
